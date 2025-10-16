@@ -316,7 +316,7 @@
 
   .subscribe-box {
     max-width: 100%;
-    flex-direction: row;
+    /* flex-direction: row; */
     padding: 6px;
   }
 
