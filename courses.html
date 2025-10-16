@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>ClassIQ - Empower Your Learning Journey</title>
+    <meta name="description" content="Unlock a world of knowledge and skills with our innovative online courses, expert instructors, and interactive learning tools."/>
+    <link href="https://fonts.googleapis.com/css?family=Inter:700,600|Poppins:600,500,400,700" rel="stylesheet">
+    
+    <!-- Loading all component css in modular fashion -->
+    <link rel="stylesheet" href="./src/styles/global.css" /> 
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/all-courses.css">
+    <link rel="stylesheet" href="./src/styles/footer.css"/> 
+  </head>
+  <body>
+    <div class="desktop">
+      <!-- Header section -->
+      <header class="main-header">
+        <div class="header-wrapper">
+          <div class="logo-nav">
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+              <div class="logo">
+                <img
+                  class="logo-img"
+                  src="./images/header-logo.svg"
+                  alt="ClassIQ Logo"
+                />
+                <div class="brand-name"><a href="./index.html">ClassIQ</a></div>
+              </div>
+              <a href="./courses.html" class="nav-link desktop-only">Courses</a>
+            </nav>
+          </div>
+      
+          <!-- Desktop buttons -->
+          <a href="./sign-in.html" class="header-btn login-btn desktop-only"><span>Login</span></a>
+          <a href="./sign-up.html" class="header-btn signup-btn desktop-only"><span>SignUp</span></a>
+      
+          <button class="hamburger mobile-only" aria-label="Toggle menu">
+            <span class="hamburger-icon">☰</span>
+          </button>
+        </div>
+      
+        <!-- Mobile Menu (hidden by default) -->
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="./courses.html">Courses</a>
+          <a href="./sign-in.html">Login</a>
+          <a href="./sign-up.html">SignUp</a>
+        </div>
+      </header>
+      
+      <div class="banner">
+          <div class="text-content">
+              <h2>Enroll in <span>Your Fav Courses</span></h2>
+              <img class="green-splash-heading" src="./images/vector-green-2.svg" alt="green-splash-heading" role="presentation" />
+            </div>
+            <div class="image-content">
+                <img class="vector-green-1" src="./images/vector-green-2.svg" alt="green-splash" role="presentation" />
+                <img class="vector-green-2" src="./images/vector-green-1.svg" alt="green-splash" role="presentation" />
+                <img class="vector-green-3" src="./images/vector-green-2.svg" alt="green-splash" role="presentation" />
+                <img class="vector-green-4" src="./images/vector-green-1.svg" alt="green-splash" role="presentation" />
+                <img src="./images/courses/fav-courses-img.svg" alt="Person using laptop">
+        </div>
+      </div>
+
+      <!-- Courses Section -->
+      <section class="courses">
+        <div class="courses-container">
+        <h2 class="courses-title">
+            All Courses 
+            <img src="./images/courses/courses-arrow.svg" alt="courses-arrow">
+        </h2>
+        <div class="courses-grid">
+            <div class="course-card"></div>
+            <div class="course-card"></div>
+            <div class="course-card"></div>
+            <div class="course-card"></div>
+            <div class="course-card"></div>
+            <div class="course-card"></div>
+        </div>
+        </div>
+      </section>
+        
+      <!-- footer section -->
+      <footer class="footer">
+        <div class="footer-top">
+          <!-- Left Section: Logo and Subscription -->
+          <div class="footer-left">
+            <div class="logo footer-logo">
+              <img loading="lazy" src="./images/header-logo.svg" alt="ClassIQ Logo" />
+              <span>ClassIQ</span>
+            </div>
+      
+            <h3 class="footer-heading">Subscribe</h3>
+            <p class="footer-subtext">
+              Subscribe for the latest courses, tips and updates. Join our learning community today!
+            </p>
+      
+            <form class="subscribe-form">
+              <div class="subscribe-box">
+                <input type="email" placeholder="Enter your email" />
+                <button type="submit">Subscribe</button>
+              </div>
+            </form>
+            
+          </div>
+      
+          
+          <!-- Middle Column -->
+          <div class="footer-column">
+            <h4>ClassIQ Bussiness</h4>
+            <ul>
+              <li><a href="#">Teach on ClassIQ</a></li>
+              <li><a href="#">Teaching Tools</a></li>
+              <li><a href="#">ClassIQ app</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+      
+          <!-- Right Column -->
+          <div class="footer-column">
+            <h4>Careers</h4>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Affiliate</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2024 ClassIQ. All rights reserved.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><img loading="lazy" src="./images/footer/black-instagram-icon.svg" alt="Instagram" /></a>
+            <a href="#" class="social-icon"><img loading="lazy" src="./images/footer/linkedin.svg" alt="LinkedIn" /></a>
+            <a href="#" class="social-icon"><img loading="lazy" src="./images/footer/twitter-icon.svg" alt="X" /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+        
+    <script src="./src/js/app.js"></script>
+  </body>
+</html>
