@@ -1,0 +1,114 @@
+
+/* Company section below hero*/
+.desktop .company {
+    position: relative;
+    /* margin: 24px 126px 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+  }
+    
+     /* Heading  */
+    .desktop .trusted-by {
+      margin: 0;
+      font-family: "Poppins", Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1.4;
+      color: #555;
+      text-align: center;
+    }
+    
+     /* Logos row  */
+    .desktop .group-6 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap; 
+      width: 100%;
+      max-width: 1200px;
+    }
+    
+     /* Individual logos  */
+    .desktop .google,
+    .desktop .airbnb,
+    .desktop .netflix,
+    .desktop .amazon,
+    .desktop .facebook {
+      height: 50px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+      filter: grayscale(20%);
+      opacity: 0.9;
+    }
+  
+
+
+/* Wrapper to clip overflow and center marquee */
+.desktop .group-6-marquee-wrapper {
+    width: 100%;
+    max-width: 1200px; /* same as .group-6 max-width */
+    overflow: hidden; /* hide overflow on left and right */
+    margin: 0 auto; /* center horizontally */
+    position: relative;
+  }
+  
+  /* Animate the .group-6 container */
+  .desktop .group-6 {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: nowrap; /* no wrap for marquee */
+    width: max-content; /* width based on content */
+    animation: marquee-scroll 15s linear infinite;
+  }
+  
+  /* Keyframes for marquee from right to left */
+  @keyframes marquee-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-50%)); /* scroll half the total width */
+    }
+  }
+  
+  /* Keep your existing logo styles */
+  
+  .desktop .google,
+  .desktop .airbnb,
+  .desktop .netflix,
+  .desktop .amazon,
+  .desktop .facebook {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    filter: grayscale(20%);
+    opacity: 0.9;
+    user-select: none;
+    pointer-events: none;
+  }
+  
+  /* Responsive tweak if needed */
+  @media (max-width: 768px) {
+    .desktop .trusted-by {
+      font-size: 20px;
+    }
+    .desktop .group-6-marquee-wrapper {
+      max-width: 100%;
+    }
+    .desktop .google,
+    .desktop .airbnb,
+    .desktop .netflix,
+    .desktop .amazon,
+    .desktop .facebook {
+      height: 40px;
+      margin: 0 10px;
+    }
+  }
+  
+  

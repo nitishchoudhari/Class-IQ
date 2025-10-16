@@ -1,0 +1,165 @@
+.footer {
+    background-color: #f9f9f9;
+    padding: 60px 120px 20px;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+  }
+  
+  /* Top section layout */
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 40px;
+  }
+  
+  /* Left column (logo and subscribe) */
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-heading {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .footer-subtext {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+    white-space: nowrap; /* ✅ keep it on one line */
+  }
+  
+  /* Combined input + button in one box */
+  .subscribe-form {
+    max-width: 420px;
+    width: 100%;
+  }
+  
+  .subscribe-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    width: 100%;
+    box-shadow: 0 0 0 1px #f0f0f0; /* optional light shadow, remove if not needed */
+  }
+  
+  .subscribe-box input {
+    flex: 1;
+    border: none;
+    padding: 14px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    background: transparent;
+    outline: none;
+  }
+  
+  .subscribe-box button {
+    background-color: #c2f578;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-box button:hover {
+    background-color: #b3e669;
+  }
+  
+  /* Left (main) section: takes ~60% of the space */
+.footer-left {
+    /* flex: 12; */
+    min-width: 280px;
+    line-height: 1.6;
+  }
+  
+  
+  /* Right columns */
+  .footer-column {
+    /* flex: 1 1 150px; */
+    margin-top: 20px;
+  }
+  
+  .footer-column h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Bottom section */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #e0e0e0; /* ✅ this is the single line you referred to */
+    flex-wrap: wrap;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    background-color: #c2f578;
+    border-radius: 6px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icon img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .footer-column ul li {
+    line-height: 1.6;
+    margin-bottom: 6px;
+  }

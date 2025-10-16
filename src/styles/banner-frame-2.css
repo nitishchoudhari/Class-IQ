@@ -1,0 +1,294 @@
+/* =====================================
+   FRAME-2 (Hero Section) Styles
+   Clean, responsive layout with left text, right image
+===================================== */
+
+.frame-2 {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    min-height: 760px;
+    margin-bottom: 115px;
+  }
+  
+  /* Flex layout to hold text and image side by side */
+  .frame-2 .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 126px;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  
+  /* Left-side text content */
+  .hero-text {
+    flex: 1 1 50%;
+    min-width: 320px;
+  }
+  
+  /* Main heading */
+  .hero-text .empower-your {
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 68px;
+    font-weight: 400;
+    color: transparent;
+    width: 100%;
+    line-height: normal;
+  }
+  
+  .hero-text .span {
+    font-weight: 300;
+    color: #000;
+    letter-spacing: -1.39px;
+  }
+  
+  .hero-text .text-wrapper-6 {
+    font-weight: 700;
+    color: #000;
+    letter-spacing: -1.39px;
+  }
+  
+  .hero-text .text-wrapper-7 {
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0;
+  }
+  
+  /* Underline under brand name */
+  .brand {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .brand .vector-3 {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Paragraph */
+  .hero-text .p {
+    margin-top: 24px;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #96989a;
+    line-height: 1.6;
+    max-width: 720px;
+  }
+  
+  /* Explore Courses CTA */
+  .frame-3 {
+    margin-top: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c2f578;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .text-wrapper-8 {
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: #000;
+    white-space: nowrap;
+  }
+  
+  /* Right-side image + green vectors */
+  .hero-visual {
+    flex: 1 1 40%;
+    position: relative;
+    max-width: 600px;
+  }
+  
+  .hero-visual .image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Decorative vectors (positioned behind image) */
+  .hero-visual .vector-green-1,
+  .hero-visual .vector-green-2,
+  .hero-visual .vector-green-3,
+  .hero-visual .vector-green-4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: auto;
+    transform-origin: center;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .vector-green-1 {
+    transform: translate(-35%, -62%) rotate(30deg);
+  }
+  
+  .vector-green-2 {
+    transform: translate(-70%, -62%) rotate(150deg);
+  }
+  
+  .vector-green-3 {
+    transform: translate(-30%, -62%) rotate(60deg);
+  }
+  
+  .vector-green-4 {
+    transform: translate(-65%, -62%) rotate(120deg);
+  }
+  
+  /* Decorative floating elements */
+  .group-4,
+  .group-5 {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .group-4 {
+    top: 191px;
+    left: 799px;
+    width: 74px;
+    height: 74px;
+  }
+  
+  .group-5 {
+    width: 2.33%;
+    height: 4.19%;
+    top: 22.6%;
+    left: 86.7%;
+  }
+  
+  /* =====================================
+     Responsive Styling (Mobile / Tablet)
+  ===================================== */
+  
+  @media (max-width: 768px) {
+    .frame-2 {
+      padding: 40px 20px;
+      min-height: auto;
+      margin-bottom: 60px;
+    }
+  
+    .frame-2 .hero-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+      gap: 40px;
+    }
+  
+    .hero-text {
+      padding: 100px 20px 20px; 
+      width: 100%;
+      text-align: center;
+    }
+  
+    .empower-your {
+      font-size: 32px !important;
+      line-height: 1.3;
+    }
+  
+    .p {
+      font-size: 14px !important;
+      color: #6d6d6d;
+    }
+  
+    .frame-3 {
+      padding: 12px 24px;
+      font-size: 16px;
+      margin-top: 24px;
+    }
+  
+    .text-wrapper-8 {
+      font-size: 16px;
+      white-space: normal;
+    }
+  
+    .hero-visual {
+      order: 2;
+      width: 100%;
+      max-width: 400px;
+      margin: 5px auto;
+    }
+  
+    .hero-visual .image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  
+    .group-4,
+    .group-5,
+    .vector-green-1,
+    .vector-green-2,
+    .vector-green-3,
+    .vector-green-4 {
+      display: none;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1440px) {
+    .frame-2 {
+      padding: 60px 40px;
+      text-align: left;
+    }
+  
+    /* Make hero-content a flex row that can wrap */
+    .frame-2 .hero-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;        /* allow wrapping */
+      align-items: flex-start;
+      gap: 40px;
+      justify-content: space-between;
+    }
+  
+    /* Text container - reduce font size a bit, limit max-width */
+    .frame-2 .empower-your {
+      font-size: 48px;  /* smaller than desktop */
+      flex-shrink: 1;
+    }
+  
+    .frame-2 .p {
+      font-size: 14px;
+      flex-shrink: 1;
+    }
+
+  
+    /* Image container */
+    .frame-2 .hero-visual {
+      width: 40%;
+      max-width: 400px;
+      flex-shrink: 0;
+      order: 0;
+      margin: 0;
+    }
+  
+    .frame-2 .hero-visual .image {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Hide decorative vectors for cleaner view */
+    .frame-2 .group-4,
+    .frame-2 .group-5,
+    .frame-2 .vector-green-1,
+    .frame-2 .vector-green-2,
+    .frame-2 .vector-green-3,
+    .frame-2 .vector-green-4 {
+      display: none;
+    }
+  }
+  

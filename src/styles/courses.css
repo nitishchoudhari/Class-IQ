@@ -1,0 +1,147 @@
+/* Base Layout */
+.frame-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+    margin: 80px 0;
+  }
+  
+  .frame-5 {
+    position: relative;
+    width: 333px;
+    height: 288px;
+    background-color: #ecedef;
+    border-radius: 31px;
+    box-shadow: var(--drop-shadow-200);
+  }
+  
+  /* Headings inside cards */
+  .text-wrapper-11,
+  .text-wrapper-13,
+  .text-wrapper-14 {
+    position: absolute;
+    top: 144px;
+    font-family: "Inter", Helvetica;
+    font-weight: 600;
+    color: #373636;
+    font-size: 20px;
+    text-align: center;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Images */
+  .group-7,
+  .group-8 {
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 130px;
+  }
+  
+  /* CTA Button (View Courses) */
+  .frame-6,
+  .frame-7 {
+    display: flex;
+    width: 124px;
+    height: 37px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 11px 21px;
+    position: absolute;
+    top: 194px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c2f578;
+    border-radius: 8px;
+  }
+  
+  /* Button Text */
+  .text-wrapper-12 {
+    font-family: "Inter", Helvetica;
+    font-weight: 600;
+    color: #373636;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  /* Section Heading */
+  .certified-cources {
+    padding-top: 120px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+  
+  .text-wrapper-15 {
+    font-weight: 500;
+    color: #565656;
+  }
+  
+  .text-wrapper-16 {
+    font-weight: 800;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 1024px) {
+    .frame-4 {
+      gap: 36px;
+    }
+  
+    .frame-5 {
+      width: 280px;
+      height: 270px;
+    }
+  
+    .text-wrapper-11,
+    .text-wrapper-13,
+    .text-wrapper-14 {
+      font-size: 18px;
+      top: 138px;
+    }
+  
+    .frame-6,
+    .frame-7 {
+      top: 190px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .frame-4 {
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      margin: 60px 0;
+    }
+  
+    .frame-5 {
+      width: 90%;
+      max-width: 330px;
+      height: 270px;
+    }
+  
+    .text-wrapper-11,
+    .text-wrapper-13,
+    .text-wrapper-14 {
+      font-size: 18px;
+      top: 132px;
+    }
+  
+    .frame-6,
+    .frame-7 {
+      top: 185px;
+    }
+  
+    .certified-cources {
+      font-size: 24px;
+      padding-top: 80px;
+      line-height: 1.6;
+    }
+  }
+  

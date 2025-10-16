@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>SignUp - ClassIQ</title>
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/sign-up.css" />
+    <link rel="stylesheet" href="./src/styles/form-validation.css">
+    
+  </head>
+  <body>
+    <div class="sign-up">
+      <header class="main-header">
+        <div class="header-wrapper">
+          <div class="logo-nav">
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+              <div class="logo">
+                <img
+                  class="logo-img"
+                  src="./images/header-logo.svg"
+                  alt="ClassIQ Logo"
+                />
+                <div class="brand-name"><a href="./index.html">ClassIQ</a></div>
+              </div>
+              <a href="#courses" class="nav-link desktop-only">Courses</a>
+            </nav>
+          </div>
+          <!-- Desktop buttons -->
+          <a href="./sign-in.html" class="header-btn login-btn desktop-only"><span>Login</span></a>
+          <a href="./sign-up.html" class="header-btn signup-btn desktop-only"><span>SignUp</span></a>
+          <!-- Hamburger (only shown on mobile) -->
+          <button class="hamburger mobile-only" aria-label="Toggle menu">☰</button>
+        </div>
+        <!-- Mobile Menu (hidden by default) -->
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="#courses">Courses</a>
+          <a href="./sign-in.html">Login</a>
+          <a href="./sign-up.html">SignUp</a>
+        </div>
+      </header>
+      <main class="frame">
+        <div class="rectangle"></div>
+        <h1 class="text-wrapper-4">SignUp</h1>
+        <form class="signup-form" id="signup-form" action="#form-submit" method="post">
+          <!-- Email -->
+          <div class="form-field floating-label">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="div"
+              placeholder=" "
+              required
+              aria-required="true"
+            />
+            <label for="email">Enter Your Email</label>
+            <span class="error-message" id="email-error"></span>
+          </div>
+        
+          <!-- Full Name -->
+          <div class="group floating-label">
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              class="rectangle-2"
+              placeholder=" "
+              required
+              aria-required="true"
+            />
+            <label for="fullname">Enter Your Fullname</label>
+            <span class="error-message" id="fullname-error"></span>
+          </div>
+        
+          <!-- Password -->
+          <div class="group-2 floating-label">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="rectangle-2"
+              placeholder=" "
+              required
+              aria-required="true"
+            />
+            <label for="password">Enter Your Password</label>
+            <span class="error-message" id="password-error"></span>
+          </div>
+        
+          <!-- Submit button -->
+          <div class="login-wrapper">
+            <button type="submit" class="login">SignUp</button>
+          </div>
+
+            <!-- Login link -->
+            <p class="already-have-an">
+              <span class="span">Already have an account? </span>
+              <a href="./sign-in.html" class="text-wrapper-5">Login</a>
+            </p>
+        </form>
+        
+        
+      </main>
+    </div>
+    <script src="./src/js/sign-up-validation.js"></script>
+  </body>
+</html>
