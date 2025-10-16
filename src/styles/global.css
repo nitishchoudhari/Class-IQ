@@ -1,7 +1,10 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Inter:700,600|Poppins:600,500,400,700");
+/* @import url("https://fonts.googleapis.com/css?family=Inter:700,600|Poppins:600,500,400,700"); */
 * {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
   box-sizing: border-box;
 }
 html,
@@ -13,7 +16,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-/* a blue color as a generic focus style */
+
 button:focus-visible {
   outline: 2px solid #4a90e2 !important;
   outline: -webkit-focus-ring-color auto 5px !important;
@@ -22,7 +25,6 @@ a {
   text-decoration: none;
 }
 
-/* Global overflow guard: keep layout within viewport width */
 body > * {
   max-width: 100vw;
   background-color: #f9f9f9;
@@ -30,14 +32,12 @@ body > * {
   padding: 0;
 }
 
-/* Containers stay within viewport */
 .desktop {
   width: 100%;
   max-width: 100vw;
   /* overflow-x: hidden; */
 }
 
-/* Media elements scale down within their containers */
 img,
 svg,
 video,

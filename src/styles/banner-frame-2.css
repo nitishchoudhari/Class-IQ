@@ -1,6 +1,5 @@
 /* =====================================
-   FRAME-2 (Hero Section) Styles
-   Clean, responsive layout with left text, right image
+   FRAME-2 Hero Section Styles
 ===================================== */
 
 .frame-2 {
@@ -12,7 +11,6 @@
     margin-bottom: 115px;
   }
   
-  /* Flex layout to hold text and image side by side */
   .frame-2 .hero-content {
     display: flex;
     justify-content: space-between;
@@ -117,7 +115,7 @@
     z-index: 1;
   }
   
-  /* Decorative vectors (positioned behind image) */
+  /* Decorative vectors positioned behind image */
   .hero-visual .vector-green-1,
   .hero-visual .vector-green-2,
   .hero-visual .vector-green-3,
@@ -170,8 +168,8 @@
     left: 86.7%;
   }
   
-  /* =====================================
-     Responsive Styling (Mobile / Tablet)
+  /* ===================================== 
+  Responsive Styling (Mobile / Tablet)
   ===================================== */
   
   @media (max-width: 768px) {
@@ -245,19 +243,17 @@
       text-align: left;
     }
   
-    /* Make hero-content a flex row that can wrap */
     .frame-2 .hero-content {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;        /* allow wrapping */
+      flex-wrap: wrap;    
       align-items: flex-start;
       gap: 40px;
       justify-content: space-between;
     }
   
-    /* Text container - reduce font size a bit, limit max-width */
     .frame-2 .empower-your {
-      font-size: 48px;  /* smaller than desktop */
+      font-size: 48px; 
       flex-shrink: 1;
     }
   
@@ -281,7 +277,6 @@
       height: auto;
     }
   
-    /* Hide decorative vectors for cleaner view */
     .frame-2 .group-4,
     .frame-2 .group-5,
     .frame-2 .vector-green-1,

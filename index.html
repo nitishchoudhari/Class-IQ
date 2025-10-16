@@ -5,17 +5,19 @@
     <meta charset="utf-8" />
     <title>ClassIQ - Empower Your Learning Journey</title>
     <meta name="description" content="Unlock a world of knowledge and skills with our innovative online courses, expert instructors, and interactive learning tools."/>
-      <link rel="stylesheet" href="./src/styles/global.css" /> 
-      <link rel="stylesheet" href="./src/styles/header.css">
-       <link rel="stylesheet" href="./src/styles/banner-frame-2.css" /> 
-       <link rel="stylesheet" href="./src/styles/company.css">
-       <link rel="stylesheet" href="./src/styles/courses.css">
-       <link rel="stylesheet" href="./src/styles/rest.css">
-      <link rel="stylesheet" href="./src/styles/footer.css" /> 
+    <link href="https://fonts.googleapis.com/css?family=Inter:700,600|Poppins:600,500,400,700" rel="stylesheet">
+    
+    <!-- Loading all component css in modular fashion -->
+    <link rel="stylesheet" href="./src/styles/global.css" /> 
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/banner-frame-2.css" /> 
+    <link rel="stylesheet" href="./src/styles/company.css">
+    <link rel="stylesheet" href="./src/styles/courses.css">
+    <link rel="stylesheet" href="./src/styles/all-in-one-soln.css">
+    <link rel="stylesheet" href="./src/styles/footer.css"/> 
   </head>
   <body>
     <div class="desktop">
-
       <!-- Header section -->
       <header class="main-header">
         <div class="header-wrapper">
@@ -155,6 +157,7 @@
         </article>
       </section>
       
+      <!-- all in one solution  -->
       <div class="solution-wrapper">
         <!-- Left visual block -->
         <section class="frame-8">
@@ -218,6 +221,8 @@
           </a>
         </section>
       </div>
+
+      <!-- footer section -->
       <footer class="footer">
         <div class="footer-top">
           <!-- Left Section: Logo and Subscription -->
@@ -241,6 +246,7 @@
             
           </div>
       
+          
           <!-- Middle Column -->
           <div class="footer-column">
             <h4>ClassIQ Bussiness</h4>
@@ -261,6 +267,7 @@
               <li><a href="#">Support</a></li>
             </ul>
           </div>
+          
         </div>
       
         <div class="footer-bottom">
@@ -272,18 +279,15 @@
           </div>
         </div>
       </footer>
-       
     </div>
     
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const btn = document.querySelector(".hamburger");
-    const menu = document.getElementById("mobileMenu");
-    btn.addEventListener("click", () => menu.classList.toggle("active"));
-  });
-</script>
-
-    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.querySelector(".hamburger");
+        const menu = document.getElementById("mobileMenu");
+        btn.addEventListener("click", () => menu.classList.toggle("active"));
+      });
+    </script>    
     
     <script src="./src/js/app.js"></script>
   </body>
